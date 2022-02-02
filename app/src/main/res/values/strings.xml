@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Startup</string>
+    <string name="transactions_refunds"><![CDATA[Transactions & Refunds]]></string>
+</resources>

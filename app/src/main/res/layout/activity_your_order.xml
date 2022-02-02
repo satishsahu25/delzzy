@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFC817"
+    tools:context=".YourOrderActivity">
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/leftarrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/cardbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <ImageView
+              android:id="@+id/imageView2"
+              android:layout_width="120dp"
+              android:layout_height="120dp"
+              android:layout_marginTop="-60dp"
+              android:src="@drawable/icons"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:id="@+id/contentlay"
+              android:orientation="vertical"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/imageView2">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Cake"
+                  android:textColor="@color/black"
+                  android:textSize="25sp"
+                  android:textStyle="bold"
+                  android:layout_gravity="center_horizontal"
+                  />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="7th Heaven"
+                  android:textStyle="bold"
+                  android:layout_margin="3dp"
+                  android:layout_gravity="center_horizontal"
+                  />
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="15dp"
+                  android:gravity="center_horizontal"
+                  android:orientation="horizontal">
+                  <ImageView
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:layout_marginLeft="10dp"
+                      android:src="@drawable/leftarrow"/>
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="30dp"
+                      android:layout_gravity="center_vertical"
+                      android:layout_marginRight="15dp"
+                      android:layout_marginLeft="25dp"
+                     >
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/black"
+                          android:textStyle="bold"
+                          android:textSize="15sp"
+                          android:layout_marginRight="5dp"
+                          android:text="24-Jan-2022"/>
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Delivered"
+                          android:textSize="15sp"
+                          android:textStyle="bold"
+                          android:textColor="#267E3E"/>
+                  </LinearLayout>
+
+                  <ImageView
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="-20dp"
+                      android:src="@drawable/leftarrow"/>
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                    android:layout_marginRight="-10dp"
+                      android:layout_gravity="center_vertical"
+                      android:layout_marginLeft="10dp"
+                      android:background="#267E3E">
+                      <TextView
+                          android:paddingLeft="3dp"
+                          android:layout_marginTop="2dp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/white"
+                          android:text="4.1"/>
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ratestar"/>
+                  </LinearLayout>
+
+              </LinearLayout>
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginBottom="20dp"
+                  android:text="Buy Again"
+                  android:textColor="@color/black"
+                  android:textSize="20sp"
+                  android:textStyle="bold" />
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:text="How's your Food ?"
+                  android:textColor="@color/black"
+                  android:textSize="15sp"
+                  android:textStyle="bold" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="20dp"
+                  android:orientation="vertical">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      >
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="3.5"
+                          android:textColor="@color/black"
+                          android:textSize="25sp"
+                          android:layout_marginRight="10dp"
+                          android:layout_gravity="center_vertical"
+                          android:textStyle="bold"
+                          />
+
+                      <RatingBar
+                          android:layout_gravity="center_vertical"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          />
+                      <ImageView
+                        android:layout_marginLeft="35dp"
+                          android:layout_marginTop="10dp"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/editpen"/>
+                  </LinearLayout>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="5dp"
+                      android:text="ewriyhewiuryieuwryiuyrewrwerewrewrwerewrewrewrewrewewrwerewrewrwerewrwerewrewrwerewrewrewrewrewewrewrewrewrewrewrwerewreiwuyreirewiu"
+                      android:textColor="@color/black"
+                      android:textSize="15sp" />
+              </LinearLayout>
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:text="Order info"
+                  android:textColor="@color/black"
+                  android:textSize="20sp"
+                  android:textStyle="bold" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="25dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginBottom="10dp"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="View order Details"
+                      android:textColor="@color/black"
+                      android:layout_weight="1"
+                      android:textSize="15sp" />
+
+                  <ImageView
+                      android:layout_marginRight="25dp"
+                      android:layout_width="20dp"
+                      android:layout_height="20dp"
+                      android:src="@drawable/rightarrow" />
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="25dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginBottom="5dp"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Track Order"
+                      android:layout_weight="1"
+                      android:textColor="@color/black"
+                      android:textSize="15sp" />
+
+                  <ImageView
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:layout_marginRight="20dp"
+                      android:src="@drawable/downarrow" />
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="25dp"
+                  android:layout_marginBottom="5dp"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Download Invoice"
+                      android:textColor="@color/black"
+                      android:textSize="15sp" />
+              </LinearLayout>
+
+                  <TextView
+                      android:layout_marginLeft="30dp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Return window closed on 25 January ,2022"/>
+
+                  <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                      android:layout_marginLeft="30dp"
+                   android:text="Ordered on 22 October , 2021"/>
+
+          </LinearLayout>
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <ImageView
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="-60dp"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
